@@ -1,0 +1,88 @@
+@media only screen and (min-width: 799px){
+
+body {
+    padding-right: 200px;
+    font-family: Arial;
+    color: white;
+    background-color: #6200EE;
+    }
+.main-preview-player {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-js,
+    
+.playlist-container {
+  position: relative;
+  min-width: 300px;
+  min-height: 150px;
+  height: 0;
+}
+
+.video-js {
+  flex: 3 1 70%;
+}
+
+.playlist-container {
+  flex: 1 1 30%;
+}
+
+.vjs-playlist {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.flex-container {
+    display: flex;
+    background-color: #3700B3;
+    justify-content: center;
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: Verdana 
+    
+    }
+
+.links_blancs{
+    color: #FFF;
+    }
+
+
+img{
+    width: 300px; 
+    height: 250px;
+    }
+
+.img_petites{
+    width: 25px; 
+    height: 25px;
+    }
+
+.img_allargada{
+    width: 150px; 
+    height: 500px;
+    }
+.img_mitj{
+    width: 100px; 
+    height: 100px;
+    }
+
+.footer {
+  height: 50px;
+  margin-top: 40px;
+  
+    }
+}
