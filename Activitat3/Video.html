@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset=”utf-8” />
+    <title>Michael López Fernández</title>
+    <link rel="stylesheet" href="../web/index.css">
+    <link rel="shortcut icon" href="..\Activitat1\favicon.png">
+    
+    <link rel="stylesheet" href="Js/css/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="Js/lib/jquery-1.12.4.js"></script>
+    <script src="Js/lib/jquery-ui.js"></script>
+    <script>
+        $( function() {
+        var availableTags = [
+            "Alfred",
+            "Acustica",
+            "Aitana",
+            "Artista",
+            "Cantant",
+            "Canço",
+            "Entrada",
+            "Festa",
+            "Festival",
+            "Musica",
+        ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+    
+</head>
+<body>
+    
+    <!-- Inici capçalera -->
+    <div class="flex-container">
+        <div> 
+            <h2> Web musical</h2>
+        </div>
+        <div> 
+            <h3>
+                <a href="../Web/index.html" class="links_blancs">Menu</a>
+                <a href="../Activitat2/Audio.html" class="links_blancs">Audio</a>
+                <a href="Video.html" class="links_blancs">Video</a>
+                <a href="../Activitat4/playlist.html" class="links_blancs"> Reproductor de video</a> 
+                <a href="../Activitat5/animacions.html" class="links_blancs">Animacio</a>
+            </h3>
+        </div>
+        <div>
+            <form action="../../form-result.php" method="post" target="_blank">
+                <input type="submit" value="Buscar">
+                <input type="search" name="busquedamusica" placeholder="Cantant">
+            </form>
+        </div>
+    </div>
+    <!-- Inici articles -->
+    
+    <div class="ui-widget" align="center">
+        <label for="tags">Etiqueta: </label>
+        <input id="tags">
+    </div>
+    
+    <h3>VIDEOTUTORIAL</h3>
+    
+    <video width="560" height="315" controls>
+        <source src="Video_A3-E1.mp4" type="video/mp4">
+        <source src="Video_A3-E1.webm" type="video/webm">
+        Ho sento, el teu navegador no suporta vídeo d'HTML5
+    </video>
+    
+    <h3>VIDEO YOUTUBE</h3>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/chFPjiGi-0A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+   <!-- Inici peu de pagina -->
+    
+    <footer class="footer">
+         <table width="1500px">
+             <tr>
+                <td align="center">
+                    <a title="facebook" href="https://es-es.facebook.com/"><img src="../web/imatges/facebook.png" class="img_petites"/></a>
+                    <a title="twitter" href="https://twitter.com/?lang=es"><img src="../web/imatges/twitter.png" class="img_petites"/></a>
+                    <a title="instagram" href="https://www.instagram.com/?hl=es"><img src="../web/imatges/instagram.png" class="img_petites"/></a>
+                </td>
+
+                <td align="center">  
+                    <h3>Uneix-te</h3>
+<p>
+                    Ven amb nosaltres
+<p>
+                    Afiliat a TicketMusica
+<p>
+                    Publicitat
+                </td>
+                 <td align="center">  
+                     <form action="#" target="" method="get" name="formDatosPersonales">
+                        <label for="Nom">Nom</label>
+                        <input type="text" name="Nom" id="Nom" placeholder="Escriu el teu nom"/>
+<p>
+                        <label for="Cognoms">Cognoms</label>
+                        <input type="text" name="Cognoms" id="Cognoms" placeholder="Cognoms"/>
+<p>
+                        <label for="Email" >Email</label>
+                        <input type="Email" name="Email" id="Email" placeholder="Email" required />
+<p>
+                        <label for="Telefon">Telefon</label>
+                        <input type ="text" name="Telefon" id="Telefon" placeholder="Telefon"/>
+<p>
+                        <label for="Comentari">Comentari</label>
+                        <textarea name="Comentari" for="Comentari" placeholder="Pots donar la teva opino de la pagina" maxlength="1000"></textarea>
+<p>
+                        <input type="submit" name="Enviar" value="Enviar dades"/>
+                     </form>
+                    </td>
+                </tr>
+            </table> 
+    </footer>  
+</body>
+</html>

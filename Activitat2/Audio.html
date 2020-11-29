@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset=”utf-8” />
+    <title>Michael López Fernández</title>
+    <link rel="stylesheet" href="../web/index.css">
+    <link rel="shortcut icon" href="..\Activitat1\favicon.png">
+    <script>
+        var so = new Audio('audio2.1.2.mp3');
+ 
+        function play() {
+            so.play();
+        }
+        function pause() {
+            so.pause();
+        }
+        function muted(){
+            so.muted = true;
+        }
+        function volume(){
+            so.volume = 1.0;
+        }
+        function volum(){
+            so.volume = 0.1;
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- Inici capçalera -->
+    <div class="flex-container">
+        <div> 
+            <h2> Web musical</h2>
+        </div>
+        <div> 
+            <h3>
+                <a href="../Web/index.html" class="links_blancs">Menu</a>
+                <a href="Audio.html" class="links_blancs">Audio</a>
+                <a href="../Activitat3/Video.html" class="links_blancs">Video</a>
+                <a href="../Activitat4/playlist.html" class="links_blancs"> Reproductor de video</a> 
+                <a href="../Activitat5/animacions.html" class="links_blancs">Animacio</a>
+            </h3>
+        </div>
+        <div>
+            <form action="../../form-result.php" method="post" target="_blank">
+                <input type="submit" value="Buscar">
+                <input type="search" name="busquedamusica" placeholder="Cantant">
+            </form>
+        </div>
+    </div>
+    <!-- Inici articles -->
+    
+    <p><h3 align="center">AUDIOS</h3>
+         
+    <p>
+        <h3>Mapa Bits vs Vectorial</h3>
+         
+    <p>
+
+    <audio controls>
+        <source src="audio2.1.1.mp3" type="audio/mp3">
+        <source src="audio2.1.1.ogg" type="audio/ogg">
+        Ho sento, el teu navegador no suporta àudio d'HTML5
+    </audio>
+    <p>
+        <h3>ÚS PRÀCTIC DELS FORMATS D’IMATGES</h3>  
+    <p>
+
+    <audio id="audio">
+        <source src="audio2.1.2.mp3" type="audio/mp3">
+        <source src="audio2.1.2.ogg" type="audio/ogg">
+        Ho sento, el teu navegador no suporta àudio d'HTML5
+    </audio> 
+    <p>
+    
+        <div id="reproductor">
+            <button onclick="play();">Iniciar</button>
+            <button onclick="pause();">Pausar</button>
+            <button onclick="muted();">Silenciar</button>
+            <button onclick="volume();">Pujar Volum</button>
+            <button onclick="volum();">Baixar Volum</button> 
+        </div>  
+    <h2 align="center">3. Audio a la web</h2>
+    <p>
+    
+    <h3>1.Quins són els formats d'àudio més utilitzats i per què?</h3>
+    <p>
+        Els formats d'audio mes utilitzats son el MP3 i el OGG, ja que son suportats per tots els navegadors
+    <p>
+    <h3>Cerca informació sobre almenys 2 reproductors d'àudio que ens permetin fer llistes de reproducció (playlist), amb l'ús d’HTML5 i JavaScript, i comenta breument les seves diferències.</h3>
+    <p>
+        Els dos reproductors que he trobat son els següents:
+    <p>
+        -Audio Waveform player with playlist que les caracteristiques que inclueix son:
+    <p>
+        <blockquote> ·Temps d'inici/fi
+    <p>
+      ·Descarrega d'audio
+    <p>
+       ·Velocitat de reproducció
+    <p>
+        ·Posibilitat de compartir en xarxes socials
+    <p>
+       ·Llista de reproducció
+    <p>
+        ·Tooltips</blockquote>
+    <p>
+        -HTML5 Audio player with Playlist que les caracteristiques que inclueix son:
+    <p>
+        <blockquote> ·Permet llista de reproducció en format XML, HTML o a la base de dades
+    <p>
+        ·Cree llistats de reproduccions a traves de carpetes
+    <p>
+        ·Ordena i afegeix elements a la llista simplement arrosegant
+    <p>
+        ·Combina diferents llistes o cançons
+    <p>
+        ·Admet diferents instancies
+    <p>
+        .Te una alternativa per a plataformes flash que no es permes el format HTML</blockquote>
+    <p>    
+   <!-- Inici peu de pagina -->
+    
+    <footer class="footer">
+         <table width="1500px">
+             <tr>
+                <td align="center">
+                    <a title="facebook" href="https://es-es.facebook.com/"><img src="../web/imatges/facebook.png" class="img_petites"/></a>
+                    <a title="twitter" href="https://twitter.com/?lang=es"><img src="../web/imatges/twitter.png" class="img_petites"/></a>
+                    <a title="instagram" href="https://www.instagram.com/?hl=es"><img src="../web/imatges/instagram.png" class="img_petites"/></a>
+                </td>
+
+                <td align="center">  
+                    <h3>Uneix-te</h3>
+<p>
+                    Ven amb nosaltres
+<p>
+                    Afiliat a TicketMusica
+<p>
+                    Publicitat
+                </td>
+                 <td align="center">  
+                     <form action="#" target="" method="get" name="formDatosPersonales">
+                        <label for="Nom">Nom</label>
+                        <input type="text" name="Nom" id="Nom" placeholder="Escriu el teu nom"/>
+<p>
+                        <label for="Cognoms">Cognoms</label>
+                        <input type="text" name="Cognoms" id="Cognoms" placeholder="Cognoms"/>
+<p>
+                        <label for="Email" >Email</label>
+                        <input type="Email" name="Email" id="Email" placeholder="Email" required />
+<p>
+                        <label for="Telefon">Telefon</label>
+                        <input type ="text" name="Telefon" id="Telefon" placeholder="Telefon"/>
+<p>
+                        <label for="Comentari">Comentari</label>
+                        <textarea name="Comentari" for="Comentari" placeholder="Pots donar la teva opino de la pagina" maxlength="1000"></textarea>
+<p>
+                        <input type="submit" name="Enviar" value="Enviar dades"/>
+                     </form>
+                    </td>
+                </tr>
+            </table> 
+    </footer>  
+</body>
+</html>
